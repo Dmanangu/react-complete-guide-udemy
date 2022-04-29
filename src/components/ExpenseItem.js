@@ -1,20 +1,20 @@
 import React from "react";
+import ExpenseDate from "./ExpenseDate";
 import "./ExpenseItem.css";
 
-export default function ExpenseItem() {
+// We can now get the data outside of these parameter by using props
+// use props all the time for best practices
+// props make use your component reusable
+export default function ExpenseItem(props) {
   // set of codes for dynamic purposes
-  const expenseDate = new Date(2021, 2, 28); //Month always start with 0
-  const expenseTitle = "Car Insurance";
-  const expenseAmount = 294.67;
 
   return (
     // this is JSX code
     <div className="expense-item">
-      <div>{expenseDate.toISOString()}</div>
-      {/* Date objects cannot be outputed as text */}
+      <ExpenseDate date={props.date} />
       <div className="expense-item__description">
-        <h2>{expenseTitle}</h2>
-        <div className="expense-item__price">${expenseAmount}</div>
+        <h2>{props.title}</h2>
+        <div className="expense-item__price">${props.amount}</div>
       </div>
     </div>
   );
