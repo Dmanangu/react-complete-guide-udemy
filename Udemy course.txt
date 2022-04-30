@@ -1,0 +1,53 @@
+Why react use components 
+	- its main function is for the reusability
+		- Avoid repition of data
+
+	- separation of concerns.
+		- Keeping codebase small and manageable 
+		- small separate units and one clear specific task
+
+	- split big chunks of code into multiple smaller function
+	
+React Code is written in a declarative way
+	- user interfaces are about HTML, CSS and JavaScript
+	- its all about components
+	- react allows you to create re-usable and reactive components consisting of HTML and JavaScript and CSS
+	
+	Supports Declarative Approach
+		- Define the desired target State(s) and let React figure out the actual
+		JavaScript DOM instructions
+		
+how to create app in the 5.0.3 (latest npx)
+
+What is JSX code
+	- HTML code inside of JavaScript
+	- JSX = JavaScript XML
+	- HTML is the end is XML
+
+Components
+	- Capital characters when a component is inside this folder
+	- execute certain block of codes/ command
+	- component in react is just a JavaScript function
+	- lower case elemenent are built in HTML elements
+	- Upper case element are JavaScript codes
+	
+	- must contain 1 root element
+	- const is a variable that does not change
+
+Passing Data via Props:
+	- props passes data in the components by adding an attribute
+	- then get access to all these attributes which has been set
+	- with react out own custom components can also have attributes
+	- then it is now called props instead of attributes
+	
+	Data from components should not be stored inside of but instead outside of it
+	- react will ensure that we get one parameter
+	- props in short for properties
+	- best practice to keep your component small and focused
+	
+	
+	
+How to create react app
+
+	- npx create-react-app@latest your-project-name --use-npm
+	- index.js yung una laging niloload ng app
